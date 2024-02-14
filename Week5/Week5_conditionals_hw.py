@@ -56,7 +56,7 @@ while user_choice.lower() == 'yes':
     user_choice = input('Do you want to continue? Enter yes or no: ')
 
 print('Thank you!')
-'''
+
 # Quesion 3:
 # How to have long term division
 year = int(input('Type a year: '))
@@ -70,15 +70,26 @@ if year % 4 == 0:
         print('Leap Year')
 else:
     print('Not Leap Year')
-
+'''
 # Question 4:
 #print('Welcome to Treasure Island. Your mission to find the treasure.')
 treasure = input("Left or Right?: ")
 if treasure == 'Right':
     print("Good Job!")
     treasure = input("Would you like to Swim or Wait?: ")
-    if treasure == 'wait':
-        print('Good Job! Which door will you choose?: ')
+    if treasure == 'Wait':
+        print('Good Job!: ')
+        treasure = input("Which door will you choose?: ")
+        if treasure == 'Red':
+            print('Burned by fire. Gamer over.')
+        elif treasure == 'Yellow':
+            print('You Win!')
+        elif treasure == 'Blue':
+            print('Eaten by beasts. Gamer Over.')
+        else:
+            print('Gamer Over.')
+    else:
+        print('Attacked by trout. Game Over')
 else:
     print("Fall into a hole. Game over")
 
